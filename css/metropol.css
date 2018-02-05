@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic');
+
+.body--themed {
+  background-color: #F7F3EF;
+}
+p {
+  font-family: 'Gentium Basic', serif;
+}
+p:first-of-type::first-letter {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+.container__excerpt-from {
+  background: url("/img/background--metropol-gb.svg") repeat-x center;
+  min-height: 320px;
+  margin-top: 3.2rem;
+  padding: 0 4rem;
+}
+
+.excerpt__image {
+  background-color: #FFF;
+  max-width:65%;
+  padding:4px;
+  position:relative;
+  top:-18px;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.5);
+}
+
+.section__excerpt-from {
+  padding:24px 0 0 0;
+  font-family: 'Open Sans', serif;
+  font-size: .75em;
+  line-height: 1.8;
+  color: #FFF;
+}
+
+.excerpt-from__title {
+  font-family: 'Gentium Basic', serif;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 699px) {
+  .section__excerpt-from {
+    padding:10px 0 60px 20px;
+    font-size: .6em;
+    line-height: 2.2;
+  }
+}
+
+.excerpt__decoration {
+  background: url("/img/decoration--metropol.svg") no-repeat center;
+  background-size: 63px 45px;
+  width: 63px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 0;
+}
+
+@media (min-width: 640px) {
+  .excerpt__body {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 446px) and (max-width: 639px) {
+  .excerpt__body {
+    padding: 0 2rem;
+  }
+  .container__excerpt-from {
+    background: url("/img/background--metropol-gt.svg") repeat-x center;
+    padding: 0 2rem;
+    background-size: auto 480px;
+  }
+}
+
+@media (max-width: 445px) {
+  .excerpt__body {
+    padding: 0 1rem;
+  }
+  .container__excerpt-from {
+    background: url("/img/background--metropol-gt.svg") repeat-x center;
+    padding: 0 1rem;
+    background-size: auto 480px;
+  }
+}

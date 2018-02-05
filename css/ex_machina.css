@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
+.body--themed {
+  background-color: #1D1D1D;
+}
+p {
+  font-family: 'Space Mono', serif;
+  color: #FFF;
+}
+p:first-of-type::first-letter {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+.container__excerpt-from {
+  background-color:#D1262D;
+  border-radius: 12px;
+  margin: 3.2rem 2.4rem 0 2.4rem;
+  padding: 0 4rem;
+}
+
+.excerpt__image {
+  background-color: #FFF;
+  max-width:85%;
+  padding:8px;
+  mix-blend-mode: multiply;
+}
+
+.section__excerpt-from {
+  padding:24px;
+  font-family: 'Open Sans', serif;
+  text-transform: uppercase;
+  font-size: .75em;
+  line-height: 1.8;
+  color: #FFF;
+}
+
+.excerpt-from__title {
+  font-family: 'Space Mono', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 699px) {
+  .section__excerpt-from {
+    padding:20px;
+    font-size: .6em;
+    line-height: 2.2;
+  }
+}
+
+.excerpt__decoration {
+  background: url("/img/decoration--exmachina.svg") no-repeat center;
+  background-size: 54px 52px;
+  width: 54px;
+  height: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 0;
+}
+
+@media (min-width: 640px) {
+  .excerpt__body {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 446px) and (max-width: 639px) {
+  .excerpt__body {
+    padding: 0 2rem;
+  }
+  .container__excerpt-from {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .excerpt__body {
+    padding: 0 1rem;
+  }
+  .container__excerpt-from {
+    padding: 0 1rem;
+  }
+}

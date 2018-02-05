@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+.body--themed {
+  background-color: #FAFAFA;
+}
+p {
+  font-family: 'Libre Baskerville', serif;
+}
+p:first-of-type::first-letter {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+.container__excerpt-from {
+  background-color:#F2F2F2;
+  margin-top: 3.2rem;
+  padding: 0 4rem;
+}
+
+.excerpt__image {
+  background-color: #FFF;
+  max-width:65%;
+  position:relative;
+  top:-24px;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.5);
+}
+
+.section__excerpt-from {
+  padding:24px;
+  font-family: 'Open Sans', serif;
+  font-size: .75em;
+  line-height: 1.8;
+}
+
+.excerpt-from__title {
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 699px) {
+  .section__excerpt-from {
+    padding:20px;
+    font-size: .6em;
+    line-height: 2.2;
+  }
+}
+
+.excerpt__decoration {
+  background: url("/img/decoration--default.svg") no-repeat center;
+  background-size: 22px 33px;
+  width: 22px;
+  height: 33px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 0;
+}
+
+@media (min-width: 640px) {
+  .excerpt__body {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 446px) and (max-width: 639px) {
+  .excerpt__body {
+    padding: 0 2rem;
+  }
+  .container__excerpt-from {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .excerpt__body {
+    padding: 0 1rem;
+  }
+  .container__excerpt-from {
+    padding: 0 1rem;
+  }
+}

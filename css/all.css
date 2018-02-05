@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
+/* Global */
+html {
+  transition: 0.25s ease all;
+  -moz-transition: 0.25s ease all;
+  -webkit-transition: 0.25s ease all;
+  font-size: 20px;
+}
+
+p {
+  text-indent: 2rem;
+  text-align: justify;
+}
+@media (max-width: 445px) {
+  p {
+    text-indent: 1rem;
+    font-size: .75em;
+  }
+}
+
+
+/* Foundation Overrides */
+a:hover, a:focus {
+    color: #666;
+}
+
+.menu a {
+    padding: .8rem .6rem;
+}
+
+
+/* Start Pickin' */
+.menu--picker {
+  background-color: #F2F2F2;
+  color: #9B9B9B;
+}
+
+.menu--picker .active > a {
+    background: none;
+    color: #9B9B9B;
+    font-weight:800;
+}
+
+.menu--picker .active > a:hover {
+    background: none;
+    color: #9B9B9B;
+    font-weight:800;
+}
+
+.menu--picker .active > a:active {
+    background: none;
+    color: #9B9B9B;
+    font-weight:800;
+}
+
+.menu__item--picker {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: #9B9B9B;
+  font-size: .7rem;
+}
+
+@media (max-width: 445px) {
+  .menu__item--picker {
+    font-size: .6rem;
+  }
+}
+
+.menu__item--picker:focus {
+  font-weight: bold;
+}
