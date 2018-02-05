@@ -39,6 +39,12 @@ p:first-of-type::first-letter {
   margin-bottom: 0px;
 }
 
+@media (min-width: 640px) and (max-width: 767px) {
+  .excerpt-from__title {
+    font-size: .9rem;
+  }
+}
+
 @media (max-width: 699px) {
   .section__excerpt-from {
     padding:20px;
