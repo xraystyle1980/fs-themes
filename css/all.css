@@ -32,8 +32,9 @@ a:hover, a:focus {
 
 /* Start Pickin' */
 .menu--picker {
-  background-color: #F2F2F2;
+  background-color: #FFF;
   color: #9B9B9B;
+  border-bottom: 1px solid #D4D4D4;
 }
 
 .menu--picker .active > a {

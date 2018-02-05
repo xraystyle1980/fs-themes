@@ -4,7 +4,7 @@ var themes = {
    "ex_machina": "/css/ex_machina.css",
 }
 
-//switches
+// Switch themes
 $(function() {
    var themesheet = $('<link href="' + themes['default'] + '" rel="stylesheet" />');
    themesheet.appendTo('head');
@@ -14,6 +14,7 @@ $(function() {
    });
 });
 
+// Assign active to current theme
 $(function() {
       $( 'ul.menu li' ).on( 'click', function() {
             $( this ).parent().find( 'li.active' ).removeClass( 'active' );
