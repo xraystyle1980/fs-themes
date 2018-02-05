@@ -20,13 +20,25 @@ p:first-of-type::first-letter {
 
 .excerpt__image {
   background-color: #FFF;
-  max-width:65%;
+  max-width:200px;
   padding:4px;
   position:relative;
   top:-18px;
   -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 640px) and (max-width: 860px) {
+  .excerpt__image {
+    max-width:65%;
+  }
+}
+
+@media (max-width: 639px) {
+  .excerpt__image {
+    max-width:45%;
+  }
 }
 
 .section__excerpt-from {

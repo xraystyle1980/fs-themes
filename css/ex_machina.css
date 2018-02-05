@@ -21,7 +21,7 @@ p:first-of-type::first-letter {
 
 .excerpt__image {
   background-color: #FFF;
-  max-width:85%;
+  max-width:65%;
   padding:8px;
   mix-blend-mode: multiply;
 }
